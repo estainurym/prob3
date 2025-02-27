@@ -1,0 +1,105 @@
+<!-- Created by E.Nurym, F.Serikbol, T.Rinat -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q - BIL Coin Market</title>
+    <style>
+        /* Reset Default Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Styling */
+        body {
+            background-image: url('img/sigma.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Grid Layout - 2 rows, 2 columns */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-rows: repeat(2, auto); /* 2 rows */
+            gap: 20px; /* Space between items */
+            max-width: 800px; /* Prevents items from stretching too much */
+            margin: 50px auto; /* Centers the grid */
+            padding: 10px;
+        }
+
+        /* Product Card */
+        .product {
+            background: rgba(0, 0, 0, 0.6); /* Transparent black background */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Product Image */
+        .product img {
+            width: 100%;
+            max-height: 200px; /* Consistent height */
+            object-fit: cover; /* Crop and fit images */
+            border-radius: 5px;
+        }
+
+        /* Button with separate margin-top for each */
+        .product:nth-child(1) button { margin-top: 5px; }
+        .product:nth-child(2) button { margin-top: 65px; }
+        .product:nth-child(3) button { margin-top: 145px; }
+        .product:nth-child(4) button { margin-top: 20px; }
+
+        .product button {
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #ffaa00;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; /* Stack items in 1 column */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="product">
+            <img src="img/event.webp" alt="Item 1">
+            <button onclick="window.location.href='activ.html'">Іс шаралар</button>
+        </div>
+        <div class="product">
+            <img src="img/shop.png" alt="Item 2">
+            <button onclick="window.location.href='shop.html'">SHOP</button>
+        </div>
+        <div class="product">
+            <img src="img/timet.png" alt="Item 3">
+            <button onclick="window.location.href='timetable.html'">Расписание</button>
+        </div>
+        <div class="product">
+            <img src="img/cup.png" alt="Item 4">
+            <button onclick="window.location.href='sigmas.html'">Лицей жетістіктері</button>
+        </div>
+    </div>
+
+</body>
+</html>

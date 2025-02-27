@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Layout</title>
+    <style>
+        body {
+            background-image: url('img/sigma.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between cards */
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            gap: 20px; /* Space between image and text */
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            background-color: yellow;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .card-content .data {
+            background-color: lightgray;
+            padding: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity/cleague.png" alt="Item">
+            <div class="card-content">
+                <h2>Champion league</h2>
+                <p class="data">23.05 - 28.05</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

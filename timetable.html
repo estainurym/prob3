@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Circular Buttons</title>
+    <style>
+        /* General Styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('img/raspi2.png');
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Button Container */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 90%;
+        }
+
+        /* Buttons */
+        .button {
+            width: 20vw; /* Responsive size */
+            height: 20vw;
+            max-width: 150px; /* Limit max size */
+            max-height: 150px;
+            min-width: 80px; /* Set min size */
+            min-height: 80px;
+            border-radius: 50%;
+            border: none;
+            color: black;
+            font-size: 3vw; /* Responsive font size */
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Button Colors */
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .yellow { background-color: yellow; color: black; }
+        .purple { background-color: purple; }
+        .orange { background-color: orange; }
+        .pink { background-color: pink; color: black; }
+        .cyan { background-color: cyan; color: black; }
+
+        /* Image display */
+        #displayImage {
+            max-width: 90%;
+            width: auto;
+            height: auto;
+            display: none;
+            margin-top: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="button red" onclick="showImage('img/photo_2025-02-27_11-32-51.jpg')">8A</button>
+        <button class="button blue" onclick="showImage('img/8b.jpg')">8B</button>
+        <button class="button green" onclick="showImage('img/9a.jpg')">9A</button>
+        <button class="button yellow" onclick="showImage('img/9b.jpg')">9B</button>
+        <button class="button purple" onclick="showImage('img/10a.jpg')">10A</button>
+        <button class="button orange" onclick="showImage('img/10b.jpg')">10B</button>
+        <button class="button pink" onclick="showImage('img/11a.jpg')">11A</button>
+        <button class="button cyan" onclick="showImage('img/11b.jpg')">11B</button>
+    </div>
+
+    <!-- Image display section -->
+    <img id="displayImage" src="" alt="Click a button to see the image">
+
+    <script>
+        function showImage(imageSrc) {
+            let img = document.getElementById("displayImage");
+            img.src = imageSrc;
+            img.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
